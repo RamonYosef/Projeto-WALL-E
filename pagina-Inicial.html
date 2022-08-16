@@ -1,0 +1,260 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WALL-E</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="pagina-Inicial.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <script src="pagina-Inicial.js"></script>
+
+    
+
+</head>
+<body>
+    <div class="pdf">
+
+        <h1 id="titulo_site">WALL-E</h1>
+
+       <div id="usuario" onclick="perfil()" > <a href="#" id="usuario-1" ><i class='bx bxs-user bx-lg'></i></a></div>
+       
+ <div id="perfil">
+    <ul id="ul-1">
+        <li id="li-1"><a href="#" id="a-1">perfil</a></li>
+        <li id="li-1"><a href="#" id="a-1">configuração</a></li>
+        <li id="li-1"><a href="#" id="a-1" onclick="alerta()">saida</a></li>
+        <li id="li-2"><a href="#" id="a-1" onclick="perfil2()"><i class='bx bx-x bx-md'></i></a></li>
+    </ul>
+
+   
+</div> 
+
+
+
+            
+
+<p id="txt-plant">Sua Planta</p>
+
+<div id="content">
+    <div id="slides">
+         <input type="radio" name="slider" id="slider1" checked>
+         <input type="radio" name="slider" id="slider2">
+         <input type="radio" name="slider" id="slider3">
+         <input type="radio" name="slider" id="slider4">
+      
+   
+
+
+    <div id="box-plant1" onmousemove=" balão()" onmouseleave="balão01()">
+        <img src="data:image/jpeg;base64,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" alt="" >
+
+    </div>
+
+    <div id="box-plant" onmousemove=" balão1()" onmouseleave="balão02()">
+        <img src="https://tecnonoticias.com.br/wp-content/uploads/2021/11/rabanete-roxo-1.jpg" alt="" >
+    
+    </div>
+
+    <div id="box-plant" onmousemove=" balão2()" onmouseleave="balão03()">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQedX-hLABNkMQW5pfKwBe-xZ1pwJ-DUZ3WDA&usqp=CAU" alt="" >
+    
+    </div>
+
+    <div id="box-plant" onmousemove=" balão3()" onmouseleave="balão04()">
+        <img src="download (1).jpg" alt="" >
+    
+    </div>
+
+    <div id="navigation">
+        <label for="slider1" id="bar"></label>
+        <label for="slider2" id="bar"></label>
+        <label for="slider3" id="bar"></label>
+        <label for="slider4" id="bar"></label>
+    </div>
+</div>
+</div>
+
+<div id="balão1">
+    <ul>
+        <li id="informações">Nome: Girassol  </li>
+
+         <li id="informações">Nome científico: Helianthus annuus</li>
+
+        <li id="informações">Classificação: Espécie</li>
+
+        <li id="informações">Espécie: H. annuus</li>
+
+        <li id="informações">Família: Asteraceae</li>
+
+        <li id="informações">Género: Helianthus; Carolus Linnaeus</li>
+    </ul>
+</div>
+
+<div id="balão2">
+    <ul>
+        <li id="informações">Nome: Rabanete  </li>
+
+         <li id="informações">Nome científico: Raphanus sativus</li>
+
+        <li id="informações">Classificação: Espécie</li>
+
+        <li id="informações">Espécie: 	R. sativus</li>
+
+        <li id="informações">Família: 	Brassicaceae</li>
+
+        <li id="informações">Género: 	Raphanus</li>
+    </ul>
+</div>
+
+<div id="balão3">
+    <ul>
+        <li id="informações">Nome: Espinafre  </li>
+
+         <li id="informações">Nome científico: Spinacia oleracea</li>
+
+        <li id="informações">Classificação: Espécie</li>
+
+        <li id="informações">Espécie: Caryophyllales</li>
+
+        <li id="informações">Família: Amaranthaceae</li>
+
+        <li id="informações">Género: Spinacia</li>
+    </ul>
+</div>
+
+<div id="balão4">
+    <ul>
+        <li id="informações">Nome: Feijão  </li>
+
+         <li id="informações">Nome científico: Phaseolus vulgaris</li>
+
+        <li id="informações">Classificação: Magnoliopsida</li>
+
+        <li id="informações">Espécie: Fabales</li>
+
+        <li id="informações">Família: Fabaceae</li>
+
+        <li id="informações">Género: Phaseolus</li>
+    </ul>
+</div>
+
+
+
+
+
+
+
+
+    <div id="box-dados">
+        <p id="titulo">Dados do ambiente</p>
+        <br>
+        <ul>
+            <li id="solo"><i class='bx bxs-droplet-half'></i> Umidade do solo: </li>
+            
+            
+            <div id="barra"><label for="txt" id="txt"></label></div> 
+           
+            <br>
+            <li id="temperatura"><i class='bx bxs-thermometer'></i>Temperatuara do ambiente: </li>
+           
+             <div id="barra_temperatura"><label for="txt" id="txt1"></label></div> 
+            <br>
+             <li id="planta-dados"><i class='bx bx-leaf'></i>Umidade da Planta: </li>
+
+             <div id="barra_planta"><label for="txt" id="txt3"></label></div>
+             <br>
+
+             <li id="grafico_plant"><i class='bx bxs-bar-chart-alt-2'></i>Grafico de informação: </li>
+
+             <div id="grafico">
+                <canvas id="mychart" width=" 350px"
+                height ="250px"></canvas>
+             </div>
+             
+        </ul>
+    </div>
+
+    <div id="box_alerta">
+        <i class='bx bx-log-in bx-lg' ></i>
+        <p id="txt_alert">
+            Deseja sair do site?
+        </p>
+        <button><a href="formulario.php">sim</a></button>
+        <button><a href="#" onclick="alerta2()">não</a></button>
+        </div> 
+
+        <div id="box_burguer" onclick="menu()">
+            <div id="um"></div>
+            <div id="dois"></div>
+            <div id="tres"></div>
+        </div> 
+
+        <div id="box_menu">
+            <ul id="ul-menu">
+                <li id="li-menu"><a href="#" id="a-1"><i class='bx bxs-user bx-md' id="perf"></i> perfil</a></li>
+                <li id="li-menu"><a href="#" id="a-1"> <i class='bx bx-cog bx-md' id="cof"></i> conf</a></li>
+                <li id="li-menu"><a href="#" id="a-1"><i class='bx bx-spa bx-md' id="plan"></i> sua planta</a></li>
+                <li id="li-menu"><a href="#" id="a-1" onclick="alerta()"><i class='bx bx-log-in bx-md' id="saida"></i> saida</a></li>
+                
+                
+               
+            </ul>
+
+            <li id="li-menuX"><a href="#" id="a-1" onclick="menu_saida()"><i class='bx bx-x bx-md'></i></a></li>
+        </div>
+
+ <footer><p id="txt-copy">&copy; WALL-E</p></footer>
+        
+    
+</div>
+<script>
+    barra(800);
+    barra_temperatura(50);
+    barra_planta(350);
+    
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.js"></script>
+
+<script>
+    var ctx = document.getElementById("mychart");
+
+    var chartGraph = new Chart(ctx, {
+        type: "bar",
+        data:{
+            labels:["jan", "fer","mar","abr","mai","jun","jul","ago","set","out","nov","dez"],
+            datasets :[{
+                label: "Taxa de chuva - 2022",
+                data: [10,2,4,20,7,50,2,10,9,12,4],
+                borderWidth: 2,
+                borderColor: "white",
+                backgroundColor: "green"
+            }]
+        }
+
+
+    });
+</script>
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+<script>
+    const list = document.querySelectorAll(".list");
+    function activelink(){
+        list.forEach((item) => item.classlist.remove("active"));
+        this.classlist.add("active");
+    }
+    list.forEach((item) => item.addEventListener("click", activelink));
+</script>
+</body>
+</html>
+
+
+
